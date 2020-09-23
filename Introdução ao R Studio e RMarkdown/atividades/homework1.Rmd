@@ -1,0 +1,84 @@
+---
+title: "Homework 1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Larissa Guder
+### 27/09/2020
+
+### Questão 1
+Values
+````{r}
+b = 2
+c = 10
+d = 6
+```
+Operaçõs básicas
+``` {r}
+a = b + c
+a
+
+a = c * b
+a
+
+a = c / b
+a
+```
+
+Operações com mais de um operador
+```{r}
+a = d * b + (c / b)
+a
+
+a = c - d * (c / b) + d
+a
+```
+
+
+Teorema de Pitágoras
+``` {r}
+a = b * b + c * c
+a
+```
+
+### Questão 2
+
+Para instalar
+```
+install.packages("Brasil")
+```
+
+Para carregar
+```
+library(Brasil)
+```
+
+Helper
+```
+help(package = "Brasil")
+```
+
+Para visualizar a documentação completa do pacote, basta verificar no [site](https://cran.r-project.org/web/packages/available_packages_by_name.html)
+
+### Questão 3
+Para  utilizar o _chunk_, o trecho de código inicia com  três aspas (```) seguido por {r} e termina com três aspas.
+
+As opções para usar o _knit_ são:
+
+_eval_ = FALSE para não avaliar o código, apenas mostrar
+
+_echo_ = FALSE para não mostrar o código, apenas as saídas
+
+_results_ = "hide" para não mostrar as saídas
+
+_warning_ = FALSE e message = FALSE para suprimir as mensagens de aviso
+
+_fig.width_ = 5 and fig.height = 5 para alterar o tamanho dos gráficos gerados pelo R (em polegadas)
+
+_cache_ = TRUE para armazenar os resultados, e evitar com que eles sejam executados todas as vezes que o documento é compilado
+
+
